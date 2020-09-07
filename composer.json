@@ -1,0 +1,33 @@
+{
+  "name": "fkrcode/strava",
+  "description": "A laravel package to access data from the Strava API.",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "fkrcode",
+      "email": "fkr.explore@gmail.com"
+    }
+  ],
+  "type": "library",
+  "require": {
+    "guzzlehttp/guzzle": "^7.0.0",
+    "illuminate/support": "5.5.*|5.6.*|5.7.*|5.8.*|^6.0|^7.0",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "FkrCode\\Strava\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "FkrCode\\Strava\\StravaProvider"
+      ],
+      "aliases": {
+        "Strava": "FkrCode\\Strava\\StravaAlias"
+      }
+    }
+  }
+}
