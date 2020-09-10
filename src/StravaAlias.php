@@ -9,7 +9,7 @@ class StravaAlias extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'StravaFkr';
+        return 'Strava';
     }
 
 }
