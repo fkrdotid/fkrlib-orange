@@ -140,6 +140,13 @@ class Strava
         return $result;
     }
 
+    public function post($url, $config)
+    {
+        $res = $this->client->post( $url, $config );
+        $result = json_decode($res->getBody()->getContents());
+        return $result;
+    }
+
     private function bearer($token)
     {
         $config = [
